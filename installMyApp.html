@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安装自签名app</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .install-btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 12px 24px;
+            background-color: #007AFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .instructions {
+            text-align: left;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>自签名App在线安装</h1>
+    <p>点击下方按钮进行安装.</p>
+    
+    <a href="itms-services://?action=download-manifest&url=https://yourdomain.com/path/to/your/manifest.plist" class="install-btn">在线安装</a>
+    
+    <div class="instructions">
+        <h3>安装说明:</h3>
+        <ol>
+            <li>使用Safari浏览器打开此页面</li>
+            <li>点击 "在线安装" 按钮</li>
+            <li>在弹出的提示点击"安装"确认安装</li>
+            <li>After installation, go to Settings &gt; General &gt; Device Management</li>
+            <li>Find your developer certificate and tap "Trust"</li>
+        </ol>
+    </div>
+</body>
+</html>
